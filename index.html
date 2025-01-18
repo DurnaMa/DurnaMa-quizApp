@@ -21,36 +21,36 @@
   <div class="card quiz-card" style="width: 18rem;">
     <img src="/img/question-mark.jpg" class="card-img-top" alt="question-mark">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <div class="card mb-2">
-        <div class="card-body">
+      <h5 class="card-title" id="questiontext">Frage?</h5>
+      <div class="card mb-2 quiz-answer-card">
+        <div class="card-body" id="answer_1" onclick="checkAnswer('1')">
           Frage 1?
         </div>
       </div>
-      <div class="card mb-2">
-        <div class="card-body">
+      <div class="card mb-2 quiz-answer-card">
+        <div class="card-body" id="answer_2" onclick="checkAnswer('2')">
           Frage 2?
         </div>
       </div>
-      <div class="card mb-2">
-        <div class="card-body">
+      <div class="card mb-2 quiz-answer-card" onclick="checkAnswer('3')">
+        <div class="card-body" id="answer_3">
           Frage 3?
         </div>
       </div>
-      <div class="card mb-2">
-        <div class="card-body">
+      <div class="card mb-2 quiz-answer-card">
+        <div class="card-body" id="answer_4" onclick="checkAnswer('4')">
           Frage 4?
         </div>
       </div>
-      <div class="card mb-2">
-        <div class="card-body">
+      <div class="card mb-2 quiz-answer-card">
+        <div class="card-body" id="answer_5" onclick="checkAnswer('5')">
           Frage 5?
         </div>
       </div>
 
       <div class="question-footer">
         <span>
-          <b>1</b> von <b>5</b> Frage
+          <b>1</b> von <b id="all-questions">5</b> Frage
         </span>
         <button class="btn btn-outline-secondary btn-sm float-right" type="button" data-toggle="collapse"
                 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Nächste

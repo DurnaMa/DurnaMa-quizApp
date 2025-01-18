@@ -17,3 +17,8 @@
 .quiz-card{
     width: 30rem !important;
 }
+
+.quiz-answer-card:hover{
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
